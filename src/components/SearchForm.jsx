@@ -6,6 +6,7 @@ export function SearchForm({ onSearchSubmit }) {
 	const [query, setQuery] = useState('');
 
 	function handleInputChange(evt) {
+		evt.preventDefault();
 		setQuery(evt.target.value);
 	}
 
